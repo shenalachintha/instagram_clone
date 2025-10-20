@@ -1,0 +1,52 @@
+/* Horizontal, scrollable status bar */
+.statusbar-container {
+	background: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	padding: 10px 0;
+	margin-top: 16px; /* space below the navbar */
+}
+
+.statusbar-scroll {
+	display: flex;
+	gap: 14px;
+	overflow-x: auto;
+	padding: 0 12px;
+	scroll-behavior: smooth;
+}
+
+.statusbar-scroll::-webkit-scrollbar {
+	height: 6px;
+}
+.statusbar-scroll::-webkit-scrollbar-thumb {
+	background: #c7c7c7;
+	border-radius: 3px;
+}
+
+.status-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 70px;
+}
+
+.status-ring {
+	padding: 2px;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #fccc63, #fbad50, #cd486b, #8a3ab9, #4c68d7);
+}
+
+.status-avatar {
+	border: 2px solid #fff;
+}
+
+.status-username {
+	margin-top: 6px;
+	font-size: 12px;
+	color: #262626;
+	max-width: 70px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}

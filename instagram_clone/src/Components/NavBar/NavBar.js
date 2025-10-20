@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import imgLogo from '../../Images/Instagram-Logo.png';
 import HomeIcon from '@mui/icons-material/Home';
 import MessageIcon from '@mui/icons-material/Message';
@@ -21,22 +21,25 @@ class NavBar extends Component {
                     <Grid item xs={2}>
                         </Grid>
                     <Grid item xs={3}>
-                       <img src={imgLogo} alt="Instagram Logo" width="105px" />
+                       <img src={imgLogo} alt="Instagram Logo" width="120px" />
                     </Grid>
                     <Grid item xs={3}>
                         <div className="navbar_search">
                             <input type="text" placeholder="Search" />
                         </div>
                     </Grid>
-                    <Grid item xs={3} style={{display: 'flex', justifyContent: 'space-around'}}>
-                       <div className="navbar_icons">
-                            <HomeIcon fontSize="large" />
-                            <MessageIcon fontSize="large" />
-                            <FindInPageIcon fontSize="large" />
-                            <RecommendIcon fontSize="large" />
-                            <Avatar alt="User Avatar" src="/static/images/avatar/1.jpg" />
-
-                           
+                    <Grid item xs={5} style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
+                       <div className="navbar_icons" style={{display: 'flex', alignItems: 'center', gap: '20px'}}>
+                            <HomeIcon fontSize="large" style={{cursor: 'pointer'}} />
+                            <MessageIcon fontSize="large" style={{cursor: 'pointer'}} />
+                            <FindInPageIcon fontSize="large" style={{cursor: 'pointer'}} />
+                            <RecommendIcon fontSize="large" style={{cursor: 'pointer'}} />
+                            <Avatar 
+                                alt="User" 
+                                sx={{ width: 32, height: 32, cursor: 'pointer', bgcolor: '#191819ff' }}
+                            >
+                                U
+                            </Avatar>
                        </div>
                     </Grid>
                 </Grid>
