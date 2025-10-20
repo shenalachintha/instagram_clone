@@ -1,0 +1,186 @@
+/* Section Styles */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-a {
+    background-color: #fafafa;
+}
+
+.section-b {
+    background-color: #fafafa;
+}
+
+.section-c {
+    background-color: #fafafa;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Login Card */
+.login-card {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+/* Instagram Logo */
+.instagram-logo {
+    font-family: 'Lobster', 'Brush Script MT', cursive !important;
+    text-align: center;
+    margin-bottom: 30px !important;
+    font-size: 48px !important;
+    font-weight: 400 !important;
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-input {
+    background-color: #fafafa;
+    margin-bottom: 6px !important;
+}
+
+.login-input .MuiOutlinedInput-root {
+    background-color: #fafafa;
+    font-size: 12px;
+}
+
+.login-input .MuiOutlinedInput-input {
+    padding: 9px 8px;
+}
+
+/* Login Button */
+.login-button {
+    background-color: #0095f6 !important;
+    color: white !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    border-radius: 8px !important;
+    padding: 7px 16px !important;
+    margin-top: 8px !important;
+    font-size: 14px !important;
+}
+
+.login-button:hover {
+    background-color: #1877f2 !important;
+}
+
+/* OR Divider */
+.divider-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 18px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.divider-text {
+    padding: 0 18px;
+    color: #8e8e8e;
+    font-weight: 600;
+    font-size: 13px !important;
+}
+
+/* Facebook Login */
+.facebook-login {
+    color: #385185 !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+    padding: 8px !important;
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: center;
+    color: #00376b;
+    font-size: 12px !important;
+    margin-top: 16px !important;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    color: #003c75;
+}
+
+/* Sign Up Card */
+.signup-card {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 25px 40px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-card .MuiTypography-root {
+    font-size: 14px;
+    color: #262626;
+}
+
+.signup-link {
+    color: #0095f6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.signup-link:hover {
+    color: #1877f2;
+}
+
+/* Get App Section */
+.get-app {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.get-app-text {
+    font-size: 14px !important;
+    color: #262626;
+    margin-bottom: 16px !important;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.app-store-badge {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-b {
+        padding: 10px;
+    }
+    
+    .login-card {
+        border: none;
+        padding: 20px;
+    }
+    
+    .signup-card {
+        border: none;
+    }
+}
