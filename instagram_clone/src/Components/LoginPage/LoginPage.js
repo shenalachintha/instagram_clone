@@ -19,6 +19,10 @@ class LoginPage extends Component{
     
     handleLogin = () => {
         console.log('Login clicked', this.state);
+        // Call parent component's login handler to navigate to home
+        if (this.props.onLogin) {
+            this.props.onLogin();
+        }
     }
     
     render(){
