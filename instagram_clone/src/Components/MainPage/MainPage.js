@@ -14,11 +14,8 @@ class MainPage extends Component{
         return(
             <div>
                 <Post/>
-            
-
+                <Post/>
             </div>
-           
-
         )
     }
 }
