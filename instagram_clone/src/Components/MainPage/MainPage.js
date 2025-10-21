@@ -1,7 +1,6 @@
 import React,{Component}from 'react';
 import './MainPage.css';
-import Avatar from '@mui/material/Avatar';
-import dp1 from '../../Images/dp1.jpg';
+import Post from '../Post/Post';
 
 
 class MainPage extends Component{
@@ -14,6 +13,7 @@ class MainPage extends Component{
     render() {
         return(
             <div>
+                <Post/>
             
 
             </div>
